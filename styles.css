@@ -1,0 +1,411 @@
+
+header nav {
+    display: flex;
+    align-items: center; /* This will vertically center the logo and the list */
+    justify-content: space-between; /* This will put the logo on the left and the list on the right */
+    padding: 5px 10px; /* Add some padding around the nav content */
+    background-color: #fff; /* Background color of the nav bar */
+    color: #0cbbf1; /* Color of text in the nav bar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: glow 2s ease-in-out infinite alternate;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+
+}
+
+
+
+body {
+    padding-top: 50px; /* Adjust based on the actual height of your nav bar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: #fff;
+    /* Other styles remain unchanged */
+}
+
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    
+}
+
+nav ul {
+    justify-content: right;
+    display: flex;
+    margin-left: auto; /* Pushes the ul to the right */
+    list-style: none;
+    /* Other styles */
+}
+
+
+nav ul li {
+    font-size: large;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #1598d4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    text-shadow: 2px 2px 8px rgba(255, 204, 0, 0.8);
+}
+
+/* Section styles */
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.section p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+/* Trip Planner section styles */
+.trip-planner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.trip-planner label {
+    margin-right: 15px;
+}
+
+.trip-planner input[type="text"],
+.trip-planner input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.trip-planner input[type="text"]:focus,
+.trip-planner input[type="date"]:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+.trip-planner button {
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.trip-planner button:hover {
+    background-color: #ffcc00;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+}
+
+/* Contact form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+form button[type="submit"] {
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+form button[type="submit"]:hover {
+    background-color: #ffcc00;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Glow animation */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(231, 196, 21, 0.5);
+    }
+
+    to {
+        box-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
+    }
+}
+
+
+/* Home Section Styles */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left; /* Adjust text alignment for the content */
+    color: #fff;
+    height: 600px; /* Adjust based on your preference */
+}
+
+.h.container {
+    display: flex;
+    justify-content: space-between; /* Aligns children (content and image-box) horizontally with space between */
+    width: 100%; /* Adjust the width as necessary */
+    max-width: 1200px; /* Maximum width of the container */
+}
+
+.h.content {
+    flex-basis: 50%; /* Adjust the width of the content area */
+    padding: 20px; /* Add some padding */
+}
+
+.image-box {
+   
+    clip-path: polygon(30% 0%, 100% 0, 100% 30%, 100% 70%, 100% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+    background-size: cover;
+    background-position: center;
+    
+    border-radius: 20px; 
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff3300;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 102, 0, 0.2);
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+}
+
+.section-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6600;
+}
+
+.service p {
+    font-size: 18px;
+}
+
+/* Plan Your Trip Section Styles */
+#plans {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+.trip-planner label,
+.trip-planner input[type="text"],
+.trip-planner input[type="date"] {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.trip-planner button {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+/* Contact Section Styles */
+#contact {
+    
+    background-color: #0b0836;
+    color: #a00c0c;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: calc(100% - 40px);
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+form button[type="submit"] {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Additional sections for great places in India */
+#mumbai{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
+    height: 500px;
+    
+
+    
+} #delhi{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgb(54, 213, 216);
+}
+ #chennai{box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgb(168, 91, 209);
+    }
+     #goa{box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-top: 30px;
+        background: rgb(9,96,121);
+background: linear-gradient(90deg, rgba(9,96,121,1) 4%, rgba(81,53,110,1) 29%, rgba(0,252,253,1) 87%, rgba(230,222,55,1)100%);
+       
+
+    } 
+    #kolkata{box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-top: 30px;
+        background-color: rgb(212, 70, 143);
+        } 
+        #prem-mandir {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 30px;
+            background-color: rgb(232, 140, 28);
+            
+    
+    
+}
+.carousel-container {
+    background-color: #fff; /* Set your desired background color for the carousel container */
+    border-radius: 10px; /* Optional: Add border radius for a rounded look */
+    overflow: hidden; /* Hide overflow content outside the container */
+    width: 100%; /* Make the container fill the full page width */
+}
+
+.carousel-inner {
+    width: 100%; /* Make the carousel fill the full container width */
+}
+
+.carousel-content {
+    position: relative;
+    text-align: center;
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.7); /* Set a semi-transparent background for captions */
+    padding: 15px;
+    border-radius: 5px; /* Optional: Add border radius for a rounded look */
+}
+.great-place-content {
+    padding: 20px;
+}
+
+.great-place-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.great-place-content p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.great-place-content .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: blue;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.great-place-content .cta-button:hover {
+    background-color: #ff9500;
+}
